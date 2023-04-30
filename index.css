@@ -13,7 +13,7 @@
   --aluminium: rgba(169, 174, 184, 1);
   --gallery: rgba(236, 237, 239, 1);
 
-  --bon-jour: rgba(224, 224, 224, 1);
+  --bon-jour: rgba(100, 100, 100, 1);
 
   --white: rgba(255, 255, 255, 1);
 
@@ -50,7 +50,14 @@
 
   font-style: normal;
 }
-
+.navigation {
+  display: none;
+  
+}
+.navigation button {
+  background: transparent;
+  color: white;
+}
 .ibmplexsans-medium-black-18px {
   color: var(--black);
 
@@ -194,7 +201,17 @@
 
   margin-top: 1px;
 }
+.filter {
+  background: #f1f3f5;
+  border-radius: 4px;
+  margin-left: 150px;
+  display: none;
+}
+#input-search {
+  border: none;
 
+  background: transparent;
+}
 .search-for-your-favorite-groups-in-atg:hover {
   color: var(--chicago);
 }
@@ -336,7 +353,7 @@
   padding: 20px;
   margin-left: 21px;
   margin-top: 40px;
-  width: var(--width-full);
+  /* width: var(--width-full); */
 }
 .flex-shy {
   display: flex;
@@ -1020,18 +1037,19 @@ body {
   z-index: 999;
   width: 80px;
   height: 80px;
-  background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, #ff5c5c 0%, #f0568a 100%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 2px rgba(0, 0, 0, 0.08);
 }
-span,button  {
-  cursor:pointer;
+span,
+button {
+  cursor: pointer;
 }
 .modal-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: fit-content;
- 
+  z-index:99999;
 }
 .cabt {
   margin-top: 10px;
@@ -1065,8 +1083,8 @@ span,button  {
   display: flex;
   gap: 20px;
 }
-.form-group h3{
-  font-weight:bolder;
+.form-group h3 {
+  font-weight: bolder;
 }
 .form-group {
   flex: 1 1;
@@ -1077,14 +1095,26 @@ span,button  {
 }
 .modal-image {
   flex: 1 1;
- 
 }
-.login{
+.login {
   display: none;
 }
 .modal-input-name {
   display: flex;
   gap: 10px;
+}
+.filter img {
+  margin: auto;
+  height: 5px;
+}
+.header-shapes {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .group-container-1 {
+    width: var(--width-full);
+  }
 }
 @media screen and (max-width: 1100px) {
   .flex-row-1 {
@@ -1122,10 +1152,36 @@ span,button  {
   .sm-hid {
     display: none;
   }
+  .filter {
+    display: flex;
+    margin-left: 200px;
+  }
+  .overlap-group1 {
+    display: none;
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+  position: absolute;
+  left:25px;
+  top: 40px;
+  z-index: 999;
+
+  height: 30px;
+  }
+  .header-shapes {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 460px) {
   .flex-row-1 {
-    transform: scale(0.53);
+    transform: scale(0.55);
     margin-left: 20px;
     margin-top: -350px;
   }
@@ -1135,5 +1191,18 @@ span,button  {
   }
   .x142765-computer-engineers-follow-this {
     margin-left: -20px;
+  }
+  .filter {
+    margin-left: 100px;
+  }
+  .modal-image{
+    display:none;
+  }
+}
+@media screen and (max-width: 390px) {
+  .flex-row-1 {
+    transform: scale(0.49);
+    margin-left: 20px;
+    margin-top: -400px;
   }
 }
