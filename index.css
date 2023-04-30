@@ -1109,12 +1109,12 @@ button {
 .header-shapes {
   display: none;
 }
-.slt-flex{
+.slt-flex {
   flex: 1 1;
-  gap:7px;
+  gap: 7px;
   display: flex;
- justify-content:space-between;
- padding: 20px;
+  justify-content: space-between;
+  padding: 20px;
 }
 @media screen and (min-width: 576px) {
   .group-container-1 {
@@ -1200,8 +1200,6 @@ button {
   .filter {
     margin-left: 100px;
   }
- 
-  
 }
 @media screen and (max-width: 390px) {
   .flex-row-1 {
@@ -1210,8 +1208,13 @@ button {
     margin-top: -400px;
   }
 }
+
 @media screen and (max-width: 648px) {
   .modal-image {
     display: none;
+  }
+  #mobile-id {
+    position: absolute;
+    bottom: 1px;
   }
 }
