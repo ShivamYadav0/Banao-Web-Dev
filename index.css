@@ -721,6 +721,7 @@ button {
 }
 .feedback-users .rectangle-5 {
   width: 100%;
+  height: 250px;
 }
 .feedback-users .article-1 {
   padding: 10px;
@@ -838,6 +839,9 @@ button {
   .group {
     width: 100% !important;
   }
+  .feedback-users .rectangle-5 {
+    height: 200px;
+  }
   .artcle-place {
     width: 100%;
     gap: 10px;
@@ -851,7 +855,15 @@ button {
     margin: 0 !important;
   }
   .article-1-p-1 {
-    font-size: 18px !important;
+    font-size: 15px !important;
+    font-size: bold;
+  }
+  .article-1-p-2 {
+    font-size: 13px !important;
+  }
+  .sarthak-kamra {
+    font-size: 15px !important;
+    font-size: bold;
   }
   .like-view > img {
     display: none;
