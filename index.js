@@ -53,12 +53,9 @@ authbtn_mobile.addEventListener("click", function (e) {
 let observe = document.querySelector("#resizable");
 function outputsize() {
   //console.log(observe.offsetWidth, observe.offsetHeight);
- // document.querySelector(".title").textContent = observe.offsetWidth;
+  // document.querySelector(".title").textContent = observe.offsetWidth;
   //window.res(observe.offsetWidth, observe.offsetHeight);
 }
 outputsize();
 
 new ResizeObserver(outputsize).observe(observe);
-
-
-
