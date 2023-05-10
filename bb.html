@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="bb.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#resizable").resizable();
+        $("#draggable").draggable();
+        $("#droppable").droppable({
+          drop: function (event, ui) {
+            $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
+          },
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body id="resizable" style="margin: 0" id="draggable">
+    <div class="group">
+      <div class="card-1">
+        <div class="card-data">
+          <img
+            class="rectangle-5"
+            src="assets/rectangle-5-1.png"
+            alt="Rectangle 5"
+          />
+
+          <div class="article-11"><img src="./assets/✍️ Article.png" /></div>
+          <div class="article-1">
+            <div class="article-2">
+              <p class="article-1-p-1">
+                ! What if famous brands had regular fonts? Meet RegulaBrands
+              </p>
+              <p class="article-1-p-2">
+                I've worked in UX for the better part of a decade. From now on,I
+                plan to rei...
+              </p>
+            </div>
+            <img
+              class="select-opt group-3"
+              src="assets/group-3.png"
+              alt="Group 3"
+            />
+            <div class="select" id="select-id-4" style="display: none">
+              <p>Edit</p>
+              <p>Report</p>
+              <p>Option 3</p>
+            </div>
+          </div>
+          <div class="about">
+            <div class="about-name">
+              <img
+                class="rectangle-3"
+                src="assets/rectangle-3-2.png"
+                alt="Rectangle 3"
+              />
+
+              <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
+                Sarthak Kamra
+              </div>
+            </div>
+            <div class="like-view">
+              <img
+                class="x24px"
+                src="assets/icon-action-visibility-24px.svg"
+                alt="icon/action/visibility_24px"
+              />
+
+              <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                1.4k views
+              </div>
+              <div>
+                <img
+                  class="x24px"
+                  src="assets/baseline-share-24px.svg"
+                  alt="baseline-share-24px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-1">
+        <div class="card-data">
+          <img
+            class="rectangle-5"
+            src="assets/rectangle-5.png"
+            alt="Rectangle 5"
+          />
+
+          <div class="article-11"><img src="./assets/🔬️ Education.png" /></div>
+          <div class="article-1">
+            <div class="article-2">
+              <p class="article-1-p-1">
+                Tax Benefits for Investment under National Pension Scheme
+                launched by Government
+              </p>
+              <p class="article-1-p-2">
+                I've worked in UX for the better part of a decade. From now on,
+                I plan to rei...
+              </p>
+            </div>
+            <img
+              class="select-opt group-3"
+              src="assets/group-3.png"
+              alt="Group 3"
+            />
+            <div class="select" id="select-id-3" style="display: none">
+              <p>Edit</p>
+              <p>Report</p>
+              <p>Option 3</p>
+            </div>
+          </div>
+          <div class="about">
+            <div class="about-name">
+              <img
+                class="rectangle-3"
+                src="assets/rectangle-3-3.png"
+                alt="Rectangle 3"
+              />
+
+              <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
+                Sarah West
+              </div>
+            </div>
+            <div class="like-view">
+              <img
+                class="x24px"
+                src="assets/icon-action-visibility-24px.svg"
+                alt="icon/action/visibility_24px"
+              />
+
+              <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                1.4k views
+              </div>
+              <div>
+                <img
+                  class="x24px"
+                  src="assets/baseline-share-24px.svg"
+                  alt="baseline-share-24px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-1">
+        <div class="card-data">
+          <img
+            class="rectangle-5"
+            src="assets/rectangle-5-2.png"
+            alt="Rectangle 5"
+          />
+
+          <div class="article-11"><img src="./assets/🗓️ Meetup.png" /></div>
+          <div class="article-1">
+            <div class="article-2">
+              <p class="article-1-p-1">
+                Finance &amp; Investment Elite Social Mixer Lujiazui
+              </p>
+              <div class="article-place">
+                <div class="fri-12-oct-2018 ibmplexsans-medium-black- 15px">
+                  <img
+                    class="x-24px"
+                    src="assets/baseline-today-24px.svg"
+                    alt="baseline-today-24px"
+                  />
+                  Fri, 12 Oct, 2018
+                </div>
+
+                <div class="x-india ibmplexsans-medium-black-15px">
+                  <img
+                    class="outline-location_on-24px"
+                    src="assets/outline-location-on-24px.svg"
+                    alt="outline-location_on-24px"
+                  />
+                  Ahmedabad, India
+                </div>
+              </div>
+            </div>
+            <img
+              class="select-opt group-3"
+              src="assets/group-3.png"
+              alt="Group 3"
+            />
+            <div class="select" id="select-id-2" style="display: none">
+              <p>Edit</p>
+              <p>Report</p>
+              <p>Option 3</p>
+            </div>
+          </div>
+          <div class="visit-website">Visit Website</div>
+          <div class="about">
+            <div class="about-name">
+              <img
+                class="rectangle-3"
+                src="assets/rectangle-3-4.png"
+                alt="Rectangle3"
+              />
+
+              <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
+                Ronal Jones
+              </div>
+            </div>
+            <div class="like-view">
+              <img
+                class="x24px"
+                src="assets/icon-action-visibility-24px.svg"
+                alt="icon/action/visibility_24px"
+              />
+
+              <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                1.4k views
+              </div>
+              <div>
+                <img
+                  class="x24px"
+                  src="assets/baseline-share-24px.svg"
+                  alt="baseline-share-24px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-1">
+        <div class="card-data">
+          <div class="article-11"><img src="./assets/💼️ Job.png" /></div>
+          <div class="article-1">
+            <div class="article-2">
+              <p class="article-1-p-1">Software Developer</p>
+              <div class="article-place">
+                <div class="fri-12-oct-2018 ibmplexsans-medium-black- 15px">
+                  <img
+                    class="x-24px"
+                    src="assets/outline-work-outline-24px.svg"
+                    alt="outline-work_outline-24px"
+                  />
+                  Innoveccer Analytics Private Ltd.
+                </div>
+
+                <div class="x-india ibmplexsans-medium-black-15px">
+                  <img
+                    class="outline-location_on-24px"
+                    src="assets/outline-location-on-24px.svg"
+                    alt="outline-location_on-24px"
+                  />
+                  Noida, India
+                </div>
+              </div>
+            </div>
+            <img
+              class="select-opt group-3"
+              src="assets/group-3.png"
+              alt="Group 3"
+            />
+            <div class="select" id="select-id-1" style="display: none">
+              <p>Edit</p>
+              <p>Report</p>
+              <p>Option 3</p>
+            </div>
+          </div>
+          <div class="visit-website">Apply on Timesjobs</div>
+          <div class="about">
+            <div class="about-name">
+              <img
+                class="rectangle-3"
+                src="assets/rectangle-3-1.png"
+                alt="Rectangle 3"
+              />
+
+              <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
+                Joseph Gray
+              </div>
+            </div>
+            <div class="like-view">
+              <img
+                class="x24px"
+                src="assets/icon-action-visibility-24px.svg"
+                alt="icon/action/visibility_24px"
+              />
+
+              <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                1.4k views
+              </div>
+              <div>
+                <img
+                  class="x24px"
+                  src="assets/baseline-share-24px.svg"
+                  alt="baseline-share-24px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-c-2">
+      <div class="about about-c-2">
+        <div class="">
+          <img
+            class="x24px"
+            src="assets/outline-location-on-24px-2.svg"
+            alt="outline-location_on-24px 2"
+          />
+          Noida, India
+        </div>
+        <img
+          class="baseline-edit-24px"
+          src="assets/baseline-edit-24px.svg"
+          alt="baseline-edit-24px"
+        />
+      </div>
+
+      
+
+      <div class="article-11">
+        <img
+          class="baseline-error_outline-24px"
+          src="assets/baseline-error-outline-24px.svg"
+          alt="baseline-error_outline-24px"
+          style="transform: scale(1.5); margin:10px;"
+        />
+        <p class="your-location-will-h">
+          Your location will help us serve better and extend a personalised
+          experience.
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      let select_opt = document.querySelectorAll(".select-opt");
+      let sflag = 0;
+
+      select_opt.forEach((ch) => {
+        ch.onclick = function (e) {
+          //console.log(e.target.nextElementSibling.id);
+          let id = e.target.nextElementSibling.id;
+          if (sflag == 0)
+            document.querySelector("#" + id).style.display = "inline-block";
+          else document.querySelector("#" + id).style.display = "none";
+          sflag = !sflag;
+        };
+      });
+    </script>
+  </body>
+</html>

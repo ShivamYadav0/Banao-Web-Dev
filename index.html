@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="index.css" />
     <!-- Latest compiled and minified CSS -->
     <link
@@ -16,10 +21,23 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      // $(function () {
+      //   $("#resizable").resizable();
 
+      //   $("#resizable").draggable();
+      //   $("#droppable").droppable({
+      //     drop: function (event, ui) {
+      //       $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
+      //     },
+      //   });
+      // });
+    </script>
     <title>Document</title>
   </head>
-  <body style="margin: 0">
+  <body id="resizable" style="margin: 0" id="draggable">
     <div class="not-logged-in-desktop screen">
       <div class="flex-col-2 flex-col-6">
         <div class="header-shapes">
@@ -123,41 +141,42 @@
           <br />
           <hr />
         </div>
+      </div>
+    </div>
+    <div class="feedback-users">
+      <div class="group">
+        <div class="card-1">
+          <div class="card-data">
+            <img
+              class="rectangle-5"
+              src="assets/rectangle-5-1.png"
+              alt="Rectangle 5"
+            />
 
-        <div class="flex-row-1">
-          <div class="group-7">
-            <div class="flex-col">
-              <div class="flex-col-1 flex-col-6">
-                <img
-                  class="rectangle-5"
-                  src="assets/rectangle-5-1.png"
-                  alt="Rectangle 5"
-                />
-
-                <div class="article-1 ibmplexsans-medium-black-18px">
-                  Article
-                </div>
-
-                <div class="flex-row">
-                  <p
-                    class="what-if-famous-brand ibmplexsans-semi-bold-black-22px"
-                  >
-                    ! What if famous brands had regular fonts? Meet RegulaBrands
-                    <img
-                      class="group-3"
-                      src="assets/group-3.png"
-                      alt="Group 3"
-                    />
-                  </p>
-                </div>
-
-                <p class="ive-worked-in-ux-fo ibmplexsans-normal-chicago-19px">
+            <div class="article-11"><img src="./assets/✍️ Article.png" /></div>
+            <div class="article-1">
+              <div class="article-2">
+                <p class="article-1-p-1">
+                  ! What if famous brands had regular fonts? Meet RegulaBrands
+                </p>
+                <p class="article-1-p-2">
                   I've worked in UX for the better part of a decade. From now
                   on,I plan to rei...
                 </p>
               </div>
-
-              <div class="flex-row-2">
+              <img
+                class="select-opt group-3"
+                src="assets/group-3.png"
+                alt="Group 3"
+              />
+              <div class="select" id="select-id-4" style="display: none">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Option 3</p>
+              </div>
+            </div>
+            <div class="about">
+              <div class="about-name">
                 <img
                   class="rectangle-3"
                   src="assets/rectangle-3-2.png"
@@ -167,20 +186,18 @@
                 <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
                   Sarthak Kamra
                 </div>
+              </div>
+              <div class="like-view">
+                <img
+                  class="x24px"
+                  src="assets/icon-action-visibility-24px.svg"
+                  alt="icon/action/visibility_24px"
+                />
 
-                <div class="group-1">
-                  <img
-                    class="x24px"
-                    src="assets/icon-action-visibility-24px.svg"
-                    alt="icon/action/visibility_24px"
-                  />
-
-                  <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
-                    1.4k views
-                  </div>
+                <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                  1.4k views
                 </div>
-
-                <div class="group-2">
+                <div>
                   <img
                     class="x24px"
                     src="assets/baseline-share-24px.svg"
@@ -189,281 +206,257 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="flex-col">
-              <div class="flex-col-1 flex-col-6">
-                <img
-                  class="rectangle-5"
-                  src="assets/rectangle-5.png"
-                  alt="Rectangle 5"
-                />
+        <div class="card-1">
+          <div class="card-data">
+            <img
+              class="rectangle-5"
+              src="assets/rectangle-5.png"
+              alt="Rectangle 5"
+            />
 
-                <div class="education-1 ibmplexsans-medium-black-18px">
-                  d. Education
-                </div>
-
-                <div class="flex-row">
-                  <p
-                    class="tax-benefits-for-inv ibmplexsans-semi-bold-black- 22px"
-                  >
-                    launched by Government Tax Benefits for Investment under
-                    National Pension Scheme
-                  </p>
-
-                  <img
-                    class="baseline-more-vert-24px-1"
-                    src="assets/baseline-more-vert-24px-1.svg"
-                    alt="baseline-more_vert-24px"
-                  />
-                </div>
-
-                <p class="ive-worked-in-ux-fo ibmplexsans-normal-chicago-19px">
+            <div class="article-11">
+              <img src="./assets/🔬️ Education.png" />
+            </div>
+            <div class="article-1">
+              <div class="article-2">
+                <p class="article-1-p-1">
+                  Tax Benefits for Investment under National Pension Scheme
+                  launched by Government
+                </p>
+                <p class="article-1-p-2">
                   I've worked in UX for the better part of a decade. From now
                   on, I plan to rei...
                 </p>
               </div>
-
-              <div class="flex-row-3">
+              <img
+                class="select-opt group-3"
+                src="assets/group-3.png"
+                alt="Group 3"
+              />
+              <div class="select" id="select-id-3" style="display: none">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Option 3</p>
+              </div>
+            </div>
+            <div class="about">
+              <div class="about-name">
                 <img
                   class="rectangle-3"
                   src="assets/rectangle-3-3.png"
                   alt="Rectangle 3"
                 />
-                <div class="name ibmplexsans-semi-bold-black-18px">
+
+                <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
                   Sarah West
                 </div>
+              </div>
+              <div class="like-view">
+                <img
+                  class="x24px"
+                  src="assets/icon-action-visibility-24px.svg"
+                  alt="icon/action/visibility_24px"
+                />
 
-                <div class="group-4">
-                  <img
-                    class="x24px"
-                    src="assets/icon-action-visibility-24px.svg"
-                    alt="icon/action/visibility_24px"
-                  />
-
-                  <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
-                    1.4k views
-                  </div>
+                <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                  1.4k views
                 </div>
-
-                <div class="group-2">
+                <div>
                   <img
                     class="x24px"
-                    src="assets/baseline-share-24px-1.svg"
+                    src="assets/baseline-share-24px.svg"
                     alt="baseline-share-24px"
                   />
                 </div>
               </div>
             </div>
-            <div class="flex-col-3 flex-col-6">
-              <div class="flex-col-4 flex-col-6">
-                <img
-                  class="rectangle-5"
-                  src="assets/rectangle-5-2.png"
-                  alt="Rectangle 5"
-                />
+          </div>
+        </div>
 
-                <div class="meetup ibmplexsans-medium-black-18px">Meetup</div>
+        <div class="card-1">
+          <div class="card-data">
+            <img
+              class="rectangle-5"
+              src="assets/rectangle-5-2.png"
+              alt="Rectangle 5"
+            />
 
-                <div class="flex-row-4">
-                  <p
-                    class="finance-investment ibmplexsans-semi-bold-black-22px"
-                  >
-                    Finance &amp; Investment Elite Social Mixer Lujiazui
-                  </p>
-
-                  <div class="overlap-group3">
-                    <img
-                      class="baseline-more-vert-24px"
-                      src="assets/baseline-more-vert-24px-1.svg"
-                      alt="baseline-more_vert-24px"
-                    />
-                  </div>
-                </div>
-
-                <div class="group-container-3">
-                  <div class="group-container-4">
-                    <div class="overlap-group">
-                      <div class="visit-website">Visit Website</div>
-                    </div>
-
-                    <div class="group-6">
-                      <div class="edit ibmplexsans-normal-black-14px">Edit</div>
-                      <div class="group-6-item ibmplexsans-normal-black- 14px">
-                        Report
-                      </div>
-
-                      <div class="group-6-item ibmplexsans-normal-black- 14px">
-                        Option 3
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="group-53">
+            <div class="article-11"><img src="./assets/🗓️ Meetup.png" /></div>
+            <div class="article-1">
+              <div class="article-2">
+                <p class="article-1-p-1">
+                  Finance &amp; Investment Elite Social Mixer Lujiazui
+                </p>
+                <div class="article-place">
+                  <div class="fri-12-oct-2018 ibmplexsans-medium-black- 15px">
                     <img
                       class="x-24px"
                       src="assets/baseline-today-24px.svg"
                       alt="baseline-today-24px"
                     />
+                    Fri, 12 Oct, 2018
+                  </div>
 
-                    <div class="fri-12-oct-2018 ibmplexsans-medium-black- 15px">
-                      Fri, 12 Oct, 2018
-                    </div>
-
+                  <div class="x-india ibmplexsans-medium-black-15px">
                     <img
                       class="outline-location_on-24px"
                       src="assets/outline-location-on-24px.svg"
                       alt="outline-location_on-24px"
                     />
-
-                    <div class="x-india ibmplexsans-medium-black-15px">
-                      Ahmedabad, India
-                    </div>
+                    Ahmedabad, India
                   </div>
                 </div>
               </div>
+              <img
+                class="select-opt group-3"
+                src="assets/group-3.png"
+                alt="Group 3"
+              />
+              <div class="select" id="select-id-2" style="display: none">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Option 3</p>
+              </div>
+            </div>
+            <div class="visit-website">Visit Website</div>
+            <div class="about">
+              <div class="about-name">
+                <img
+                  class="rectangle-3"
+                  src="assets/rectangle-3-4.png"
+                  alt="Rectangle3"
+                />
 
-              <div class="group-container-5">
-                <div class="group-52">
-                  <img
-                    class="rectangle-3"
-                    src="assets/rectangle-3-4.png"
-                    alt="Rectangle3"
-                  />
-
-                  <div class="ronal-jones ibmplexsans-semi-bold-black-18px">
-                    Ronal Jones
-                  </div>
+                <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
+                  Ronal Jones
                 </div>
+              </div>
+              <div class="like-view">
+                <img
+                  class="x24px"
+                  src="assets/icon-action-visibility-24px.svg"
+                  alt="icon/action/visibility_24px"
+                />
 
-                <div class="group">
+                <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                  1.4k views
+                </div>
+                <div>
                   <img
                     class="x24px"
-                    src="assets/icon-action-visibility-24px.svg"
-                    alt="icon/action/visibility_24px"
-                  />
-                  <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
-                    1.4k views
-                  </div>
-                </div>
-
-                <div class="group-2">
-                  <img
-                    class="x24px"
-                    src="assets/baseline-share-24px-2.svg"
+                    src="assets/baseline-share-24px.svg"
                     alt="baseline-share-24px"
                   />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="overlap-group5">
-              <div class="job ibmplexsans-medium-black-18px">Job</div>
-              <div class="flex-row-5">
-                <div
-                  class="software-developer ibmplexsans-semi-bold-black- 22px"
-                >
-                  Software Developer
-                </div>
+        <div class="card-1">
+          <div class="card-data">
+            <div class="article-11"><img src="./assets/💼️ Job.png" /></div>
+            <div class="article-1">
+              <div class="article-2">
+                <p class="article-1-p-1">Software Developer</p>
+                <div class="article-place">
+                  <div class="fri-12-oct-2018 ibmplexsans-medium-black- 15px">
+                    <img
+                      class="x-24px"
+                      src="assets/outline-work-outline-24px.svg"
+                      alt="outline-work_outline-24px"
+                    />
+                    Innoveccer Analytics Private Ltd.
+                  </div>
 
-                <img
-                  class="baseline-more-vert-24px"
-                  src="assets/baseline-more-vert-24px-2.svg"
-                  alt="baseline-more_vert-24px"
-                />
-              </div>
-
-              <div class="group-54">
-                <img
-                  class="x-24px"
-                  src="assets/outline-work-outline-24px.svg"
-                  alt="outline-work_outline-24px"
-                />
-                <div
-                  class="innovaccer-analytics-private-ltd ibmplexsans-medium- black-15px"
-                >
-                  Innoveccer Analytics Private Ltd.
-                </div>
-
-                <img
-                  class="outline-location_on-24px"
-                  src="assets/outline-location-on-24px-1.svg"
-                  alt="outline-location_on-24px"
-                />
-                <div class="x-india ibmplexsans-medium-black-15px">
-                  Noida, India
+                  <div class="x-india ibmplexsans-medium-black-15px">
+                    <img
+                      class="outline-location_on-24px"
+                      src="assets/outline-location-on-24px.svg"
+                      alt="outline-location_on-24px"
+                    />
+                    Noida, India
+                  </div>
                 </div>
               </div>
-
-              <div class="overlap-group1-1">
-                <div class="apply-on-timesjobs">Apply on Timesjobs</div>
+              <img
+                class="select-opt group-3"
+                src="assets/group-3.png"
+                alt="Group 3"
+              />
+              <div class="select" id="select-id-1" style="display: none">
+                <p>Edit</p>
+                <p>Report</p>
+                <p>Option 3</p>
               </div>
-
-              <div class="flex-row-6">
+            </div>
+            <div class="visit-website">Apply on Timesjobs</div>
+            <div class="about">
+              <div class="about-name">
                 <img
                   class="rectangle-3"
                   src="assets/rectangle-3-1.png"
                   alt="Rectangle 3"
                 />
 
-                <div class="name-1 ibmplexsans-semi-bold-black-18px">
+                <div class="sarthak-kamra ibmplexsans-semi-bold-black-22px">
                   Joseph Gray
                 </div>
+              </div>
+              <div class="like-view">
+                <img
+                  class="x24px"
+                  src="assets/icon-action-visibility-24px.svg"
+                  alt="icon/action/visibility_24px"
+                />
 
-                <div class="group">
-                  <img
-                    class="x24px"
-                    src="assets/icon-action-visibility-24px.svg "
-                    alt=" icon/action/visibility_24px"
-                  />
-
-                  <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
-                    1.4k views
-                  </div>
+                <div class="x14k-views ibmplexsans-medium-fuscous-gray- 14px">
+                  1.4k views
                 </div>
-
-                <div class="group-2">
+                <div>
                   <img
                     class="x24px"
-                    src="assets/baseline-share-24px-3.svg"
+                    src="assets/baseline-share-24px.svg"
                     alt="baseline-share-24px"
                   />
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="flex-col-5 flex-col-6">
-            <div class="flex-row-7">
-              <img
-                class="x24px"
-                src="assets/outline-location-on-24px-2.svg"
-                alt="outline-location_on-24px 2"
-              />
-
-              <div class="noide-india ibmplexsans-normal-black-14px">
-                Noida, India
-              </div>
-              <img
-                class="baseline-edit-24px"
-                src="assets/baseline-edit-24px.svg"
-                alt="baseline-edit-24px"
-              />
-            </div>
-
-            <img class="line-3" src="assets/line-3.svg" alt="Line 3" />
-
-            <div class="group-42">
-              <img
-                class="baseline-error_outline-24px"
-                src="assets/baseline-error-outline-24px.svg"
-                alt="baseline-error_outline-24px"
-              />
-              <p class="your-location-will-h">
-                Your location will help us serve better and extend a
-                personalised experience.
-              </p>
-            </div>
+      <div class="group-c-2">
+        <div class="about about-c-2">
+          <div class="">
+            <img
+              class="x24px"
+              src="assets/outline-location-on-24px-2.svg"
+              alt="outline-location_on-24px 2"
+            />
+            Noida, India
           </div>
+          <img
+            class="baseline-edit-24px"
+            src="assets/baseline-edit-24px.svg"
+            alt="baseline-edit-24px"
+          />
+        </div>
+
+        <div class="article-11">
+          <img
+            class="baseline-error_outline-24px"
+            src="assets/baseline-error-outline-24px.svg"
+            alt="baseline-error_outline-24px"
+            style="transform: scale(1.5); margin: 10px"
+          />
+          <p class="your-location-will-h">
+            Your location will help us serve better and extend a personalised
+            experience.
+          </p>
         </div>
       </div>
     </div>
@@ -477,7 +470,7 @@
     </button>
     <div class="mobile-modal">
       <div
-        class="modal fade bd-example-modal-lg"
+        class="modal mdl fade bd-example-modal-lg"
         tabindex="-1"
         role="dialog"
         aria-labelledby="myLargeModalLabel"
@@ -496,7 +489,7 @@
                 <h3 class="sign">Create Account</h3>
                 <h3 class="login">Sign In</h3>
               </div>
-              <div>
+              <div class="slt-child-2">
                 <h3 class="sign" style="font-size: 2rem">
                   Already have a new account ?<span
                     id="sign-bt"
@@ -518,37 +511,37 @@
                   <input
                     type="text"
                     class="sign form-control"
-                    id="bd-example-modal-lg"
                     placeholder="First Name"
                     required
                   />
                   <input
                     type="text"
                     class="sign form-control"
-                    id="bd-example-modal-lg"
                     placeholder="Last Name"
                   />
                 </div>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="bd-example-modal-lg"
-                  placeholder="Email"
-                />
+                <input type="email" class="form-control" placeholder="Email" />
                 <input
                   type="password"
                   class="form-control"
-                  id="bd-example-modal-lg"
                   placeholder="Password"
                 />
                 <input
                   type="password"
                   class="sign form-control"
-                  id="bd-example-modal-lg"
                   placeholder="Confirm Password"
                 />
-                <button class="sign cabt">Create Account</button>
-                <button class="login cabt">Sign In</button>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                  "
+                >
+                  <button class="sign cabt">Create Account</button>
+                  <button class="login cabt">Sign In</button>
+                  <a class="mobile-auth-btn sign-side-bt">or, sign in</a>
+                </div>
                 <button class="authbt">
                   <img
                     class="baseline-error_outline-24px"
@@ -581,5 +574,21 @@
       </div>
     </div>
     <script src="index.js"></script>
+
+    <script>
+      let select_opt = document.querySelectorAll(".select-opt");
+      let sflag = 0;
+
+      select_opt.forEach((ch) => {
+        ch.onclick = function (e) {
+          //console.log(e.target.nextElementSibling.id);
+          let id = e.target.nextElementSibling.id;
+          if (sflag == 0)
+            document.querySelector("#" + id).style.display = "inline-block";
+          else document.querySelector("#" + id).style.display = "none";
+          sflag = !sflag;
+        };
+      });
+    </script>
   </body>
 </html>
