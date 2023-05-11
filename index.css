@@ -210,6 +210,7 @@ body {
   background: #f1f3f5;
   border-radius: 4px;
   margin-left: 150px;
+
   display: none;
 }
 #input-search {
@@ -389,11 +390,11 @@ body {
   font-family: var(--font-family-ibm.plex, san);
 
   font-size: var(--font-size-xD);
-  font-weight: 400;
 
+  font-weight: bolder;
   letter-spacing: 0;
   line-height: normal;
-
+  border-bottom: 1px solid #222;
   min-height: 21px;
 
   min-width: 93px;
@@ -678,7 +679,7 @@ button {
   #mobile-id {
     position: fixed;
     width: 95%;
-    margin: 0  10px;
+    margin: 0 10px;
     bottom: 2px;
   }
 }
@@ -694,8 +695,8 @@ button {
 /*  */
 .feedback-users {
   display: flex;
-  position : relative;
-  justify-content: center; 
+  position: relative;
+  justify-content: center;
   width: 100%;
   padding: 25px;
   gap: 20px;
@@ -826,12 +827,11 @@ button {
   border-bottom: 1px solid #222;
 }
 
-
 @media (max-width: 768px) {
   .feedback-users {
     flex-direction: column;
     align-items: center;
-    width : 100%;
+    width: 100%;
   }
   .group {
     width: 100% !important;
@@ -869,7 +869,7 @@ button {
     display: none;
   }
 }
-@media (min-width:768px) and (max-width: 968px) {
+@media (min-width: 768px) and (max-width: 968px) {
   .feedback-users {
     flex-direction: column;
     align-items: center;
