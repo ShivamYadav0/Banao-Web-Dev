@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css? family=IBM+Plex+Sans: 400, 700, 500, 600");
-
+html{
+  overflow-x:hidden;
+}
 :root {
   --black: Orgba(0, 0, 0, 1);
 
@@ -40,7 +42,7 @@ body {
   width: 99%;
 
   /* border: 1px solid #444; */
-  flex-wrap: wrap;
+
 }
 
 /* Classes */
@@ -209,7 +211,7 @@ body {
 .filter {
   background: #f1f3f5;
   border-radius: 4px;
-  margin-left: 150px;
+  margin-left: 100px;
 
   display: none;
 }
@@ -284,7 +286,7 @@ body {
 .rectangle-3-1 {
   position: absolute;
   top: 0;
-  width: var(--width-full);
+  width: 100vw;
   height: 440px;
 }
 
@@ -312,7 +314,7 @@ body {
   position: absolute;
   top: 0;
 
-  width: var(--width-full);
+  width:100vw;
 }
 
 .title {
@@ -353,12 +355,12 @@ body {
 }
 
 .group-container-1 {
-  align-items: center;
+ 
 
   display: flex;
   padding: 20px;
-  margin-left: 21px;
   margin-top: 40px;
+  align-items: center;
   /* width: var(--width-full); */
 }
 .flex-shy {
@@ -586,6 +588,7 @@ button {
 @media (min-width: 576px) {
   .group-container-1 {
     width: var(--width-full);
+   
   }
 }
 @media (max-width: 1100px) {
@@ -602,7 +605,7 @@ button {
 @media (max-width: 710px) {
   .overlap-group9 {
     display: block;
-    width: 96%;
+    width: 100%;
   }
   .sm-hid {
     display: none;
@@ -653,10 +656,17 @@ button {
     margin-left: -20px;
   }
   .filter {
-    margin-left: 100px;
+    margin-left: 80px;
   }
 }
 @media (max-width: 390px) {
+  .group-container-1 {
+   width: 100%;
+  }
+  .filter {
+    margin-left:70px;
+  }
+  
 }
 
 @media (max-width: 648px) {
@@ -894,4 +904,12 @@ button {
 
 .item.over {
   border: 2px dashed #000;
+}
+
+
+@media (max-width: 390px) {
+  
+  .feedback-users{
+    padding: 3px;
+  }
 }
